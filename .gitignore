@@ -1,1 +1,3 @@
 RobotPizza
+lib/*.o
+*.dat

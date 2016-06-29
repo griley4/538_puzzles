@@ -10,7 +10,7 @@ int main(){
   double r1,r2,x1,x2,y1,y2,xi[3],yi[3];
   int ncuts=3;
   int npieces=0;
-  int niterations=100;
+  int niterations=100000;
   srand (time(NULL));
   std::cout<<"PizzaN  NIntersections  NPieces"<<std::endl;
   for(int t=0; t<niterations; ++t){
