@@ -1,4 +1,4 @@
 # 538_puzzles
 http://fivethirtyeight.com/tag/the-riddler/
 
-Sometimes i do puzzles
+puzzle puzzle puzzle puzzle mushroom mushroom
