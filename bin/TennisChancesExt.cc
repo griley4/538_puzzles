@@ -13,11 +13,11 @@ int main(){
   w=l=0.;
   ypi=3;ysi=2;ygi=5;
   std::cout<<" Wins: "<<" Losses: "<<" Percent: "<<" Starting Score Sets: "<<" Games: "<<" Points: "<<" Final Skill: "<<std::endl;
-//  for(ysi=0; ysi<3; ++ysi){
-//    for(ygi=0; ygi<6; ++ygi){
-//      for(ypi=0; ypi<4; ++ypi){
+  for(ysi=0; ysi<3; ++ysi){
+    for(ygi=0; ygi<6; ++ygi){
+      for(ypi=0; ypi<4; ++ypi){
         for(int att=0; att<1000000; ++att){
-          rg=ygi;rs=ysi;rp=0;
+          rg=0;rs=0;rp=0;
           yp=ypi;
           yg=ygi;
           ys=ysi;
@@ -30,7 +30,8 @@ int main(){
             if(r1<skill){
               ++yp;
             }
-            else{++rp; if(skill<50){++skill;}}
+            else{++rp; ++skill;}
+            //else{++rp; if(skill<50){++skill;}}
             //games increment
             if(yp>=4&&(yp-rp)>=2){
               ++yg;
@@ -64,14 +65,14 @@ int main(){
           if(ys>rs){
             ++w;
             skillavg = skillavg+skill;
-            std::cout<<skill<<std::endl;
+//            std::cout<<skill<<std::endl;
           }
           else{++l;}
         }
         std::cout<<w<<" "<<l<<" "<<100.*(w/1000000.)<<" "<<ysi<<" "<<ygi<<" "<<ypi<<" "<<skillavg/w<<std::endl;
         w=l=0.;
         skillavg=0;
-//      }
-//    }
-//  }
+      }
+    }
+  }
 }
