@@ -15,7 +15,7 @@ int main(){
     int s = N;
     int r=0;
     int r1,sumvec=0;
-    std::vector<std::vector<int>> game(10,std::vector<int>(N));
+    std::vector<std::vector<int>> game(30,std::vector<int>(N));
     while(go){
       if (s > 1){
         for(int i=0; i<s; ++i){
@@ -37,7 +37,7 @@ int main(){
       }
       else{
         go=0;
-        std::cout<<"Round: "<<r<<" Players: "<<game[r].size()<<std::endl;
+//        std::cout<<"Round: "<<r<<" Players: "<<game[r].size()<<std::endl;
         result[test] = game[r].size();
       }
     }
