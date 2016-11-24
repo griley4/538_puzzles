@@ -11,7 +11,7 @@ int main(){
   std::vector<int> result(tests);
   for (int test=0;test<tests;++test){
     bool go=1;
-    int N = 2;
+    int N = 56000;
     int s = N;
     int r=0;
     int r1,sumvec=0;
