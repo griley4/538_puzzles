@@ -3,6 +3,7 @@ RobotPizza
 TennisChances
 TennisChancesExt
 LonelyKing
-ColBlotto
+ColBlottoSyst
+ColBlottoRand
 lib/*.o
 *.dat
