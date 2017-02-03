@@ -17,6 +17,7 @@ int main(){
   float defscore = 0;
   float atkscore = 0;
   for(int a=0;a<101;++a){
+    std::cout<<a<<std::endl;
     for(int b=0;b<101;++b){
       if(a+b>100) continue;
       for(int c=0;c<101;++c){
@@ -34,7 +35,7 @@ int main(){
                   for(int i=0;i<101;++i){
                     if(a+b+c+d+e+f+g+h+i>100) continue;
                     for(int j=0;j<101;++j){
-                      if(a+b+c+d+e+f+g+h+i+j>100) continue;
+                      if(a+b+c+d+e+f+g+h+i+j!=100) continue;
                       attacker[0]=a;
                       attacker[1]=b;
                       attacker[2]=c;
