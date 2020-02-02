@@ -8,12 +8,13 @@
 #include <algorithm> //sort
 
 int main(){
-  int rounds = 9999999;
+  int rounds = 1000000;
   int defwinz = 0;
   int oldrecord = 9;
   srand (time(NULL));
   std::vector<int> points = {1,2,3,4,5,6,7,8,9,10};
-  std::vector<int> defender = {100,0,0,0,0,0,0,0,0,0};
+//  std::vector<int> defender = {100,0,0,0,0,0,0,0,0,0};
+  std::vector<int> defender = {3,5,8,10,13,1,26,30,2,2};
   std::vector<int> attacker(10);
   std::vector<int> rando(11);
   float defscore = 0;
